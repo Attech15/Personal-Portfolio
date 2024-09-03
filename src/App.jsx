@@ -13,13 +13,27 @@ function App() {
   const [load, updateLoad] = useState(true);
 
   useEffect(() => {
+    // Define a maximum timeout to hide the preloader
+    const maxTimeout = 1200; // 5 seconds
+
+    const handleLoad = () => {
+      updateLoad(false);
+    };
+
+    // Listen for the window's load event
+    window.addEventListener("load", handleLoad);
+
+    // Fallback: Hide preloader after the maximum timeout
     const timer = setTimeout(() => {
       updateLoad(false);
-    }, 1200);
+    }, maxTimeout);
 
-    return () => clearTimeout(timer);
+    // Cleanup event listener and timer
+    return () => {
+      window.removeEventListener("load", handleLoad);
+      clearTimeout(timer);
+    };
   }, []);
-
   return (
     <>
       {load ? (
