@@ -26,10 +26,10 @@ const Navbar = () => {
             <img src="/instagram.png" alt="" title="instagram" />
           </a>
           <a href="https://www.linkedin.com/in/akash-mathur-a126b323b">
-            <img src="/linkdin.png" alt=""  title="linkdin"/>
+            <img src="/linkedin.png" alt=""  title="linkdin"/>
           </a>
           <a href="https://github.com/Attech15">
-            <img src="/github10.png"  alt=""  title="github"/>
+            <img src="/github.png"  alt=""  title="github"/>
           </a>
         </motion.div>
       </div>

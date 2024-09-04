@@ -69,17 +69,7 @@ const Techstack = () => {
         <div className="mainContainer">
           <div className="textContent">
             <p>
-              I have developed strong front-end skills, allowing me to create
-              seamless, responsive, and visually compelling web experiences that
-              deliver high performance and user satisfaction. My foundation in
-              front-end development includes HTML, CSS, and JavaScript. In
-              programming languages, I have proficiency in C, Core Java, and
-              TypeScript. My expertise in frameworks and libraries spans
-              React.js, Next.js, and React Router, with Redux Toolkit for state
-              management. I am also skilled in the CSS preprocessor SASS.
-              Additionally, I possess strong adaptability, creativity, and
-              problem-solving abilities, ensuring the responsiveness and
-              effectiveness of my projects."
+            I have strong front-end skills, creating responsive and visually compelling web experiences with high performance and user satisfaction. My foundation includes HTML, CSS, and JavaScript, along with proficiency in C, Core Java, and TypeScript. I’m skilled in React.js, Next.js, React Router, and Redux Toolkit for state management, and I use SASS for styling. My adaptability, creativity, and problem-solving abilities ensure my projects are effective and responsive.
             </p>
             <div className="slider">
               <Marquee

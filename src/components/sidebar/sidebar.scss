@@ -1,58 +1,60 @@
-@import '../../App.scss';
+@import "../../App.scss";
 
-.sidebar{
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+
+  .bg {
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 230px;
+    background-color: white;
+
+    @include mobile {
+      width: 200px;
+    }
+
+    .links {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+
+      a {
+        font-size: 25px;
+
+        @include mobile {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  button {
+    cursor: pointer;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    background-color: transparent;
+    border: none;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
-    color: black;
-    cursor: pointer;
-    
-    .bg{
-        z-index: 99;
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        width: 230px;
-        background-color: white;
-
-        @include mobile{
-            width: 200px;
-        }
-
-        
-        .links{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-
-            a{
-                font-size: 25px;
-                
-                @include mobile{
-                    font-size: 20px;
-                }
-            }
-        }
-    }
-
-    button{
-        cursor: pointer;
-        z-index: 99;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        position: fixed;
-        top: 25px;
-        left: 25px;
-        background-color: transparent;
-        border: none
-    }
+  }
 }

@@ -25,11 +25,14 @@ const varients = {
 const Sidebar = () => {
     const [open, setOpen] = useState(false);
 
+    const handleLinkClick = () => {
+      setOpen(false);
+  };
 
   return (
     <motion.div className='sidebar' animate={open ? "open" : "closed"}>
       <motion.div className="bg" variants={varients}>
-        <Links/>
+        <Links onLinkClick={handleLinkClick}/>
       </motion.div>
       <ToggleButton isOpen={open} setOpen={setOpen}/>
     </motion.div>

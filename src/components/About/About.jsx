@@ -69,7 +69,6 @@ const About = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Use different variants based on window width
   const appliedVariants = windowWidth <= 700 ? Boxvariants : variants;
 
   return (
@@ -106,11 +105,7 @@ const About = () => {
               proficiency in JavaScript, TypeScript, HTML, CSS, and SASS.
             </motion.p>
             <motion.p variants={appliedVariants}>
-              In addition to frontend development,I’m skilled in Data Structures
-              and Algorithms (DSA), Object-Oriented Programming (OOP), Database
-              Management Systems (DBMS), and core languages like C and Core
-              Java. These capabilities equip me to design and implement powerful
-              and scalable solutions.
+            I also have strong skills in DSA, OOP, DBMS, C, and Core Java, enabling me to build robust and scalable solutions.
             </motion.p>
             <motion.p variants={appliedVariants}>
               I thrive on learning and diving deep into new technologies. I'm

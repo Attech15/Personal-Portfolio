@@ -49,12 +49,23 @@
        }
        .social{
         display: flex;
+        // width: 30px;
+        // height: 30px;
         gap: 20px;
-        
-        img{
+
+        a{
+          display: flex;
+          width: 23px;
+          height: 23px;
+
+          img{
             width: 30px;
             height: 30px;
+            object-fit: contain;
         }
+        }
+        
+       
        }
    }
 }
