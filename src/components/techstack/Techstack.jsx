@@ -57,6 +57,11 @@ const sliderContent = [
     img: "/git.png",
     name: "git"
   },
+  {
+    id: 12,
+    img: "/tailwindCss.png",
+    name: "tailwind Css"
+  }
 ];
 
 
