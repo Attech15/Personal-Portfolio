@@ -88,12 +88,12 @@ const Contact = () => {
           initial="initial"
           animate={isInViewForm && "animate"}>
           <motion.form ref={formRef} onSubmit={sendEmail}>
-            <motion.input type="text" name="name" placeholder="Your Name" minlength="3" maxlength="20" required autoComplete="true"/>
+            <motion.input type="text" name="name" placeholder="Your Name" minLength="3" maxLength="20" required autoComplete="true"/>
             <motion.input
               type="email"
               name="email"
-              minlength="3" 
-              maxlength="40"
+              minLength="3" 
+              maxLength="40"
               placeholder="Your Email"
               required
               autoComplete="true"
@@ -101,8 +101,8 @@ const Contact = () => {
             <motion.textarea
               rows={8}
               name="message"
-              minlength="3" 
-              maxlength="100"
+              minLength="3" 
+              maxLength="100"
               placeholder="Your Message..."
               required
               autoComplete="true"

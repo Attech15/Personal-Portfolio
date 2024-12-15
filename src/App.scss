@@ -62,10 +62,9 @@ a{
 
 section{
     height: 100vh;
+    // height: -webkit-fill-available;
     scroll-snap-align: center;    
     width: 100%; /* Ensure sections take full width */
-    padding-top: env(safe-area-inset-top); // To avoid the notch or address bar
-    padding-bottom: env(safe-area-inset-bottom); // To avoid content being hidden at the bottom
 }
 
 footer{
