@@ -166,7 +166,7 @@
             top: 0;
             width: 0;
             height: 100%;
-            background-color: #2c9caf;
+            // background-color: #2c9caf;
             transform: skewX(45deg);
             z-index: -1;
             transition: width 1000ms;
@@ -184,10 +184,10 @@
          }
           &:hover {
             transform: scale(1.1);
-            outline: 2px solid #70bdca;
-            border: none;
-            box-shadow: 4px 5px 17px -4px #268391,
-            -4px -5px 17px -4px #268391;
+            // outline: 2px solid #70bdca;
+            // border: none;
+            // box-shadow: 4px 5px 17px -4px #268391,
+            // -4px -5px 17px -4px #268391;
             text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
           }
           button:hover::before {

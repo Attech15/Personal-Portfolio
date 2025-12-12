@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   background-color: white;
-  color: black;
+  // color: black;
   cursor: pointer;
 
   .bg {
@@ -17,6 +17,8 @@
     bottom: 0;
     width: 230px;
     background-color: white;
+    background-color: rgba(255, 255, 255, 0.1); /* 0.1 = very transparent */
+     backdrop-filter: blur(10px);  
 
     @include mobile {
       width: 200px;
@@ -31,6 +33,7 @@
       align-items: center;
       justify-content: center;
       gap: 20px;
+      color: white;
 
       a {
         font-size: 25px;

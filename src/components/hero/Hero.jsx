@@ -77,7 +77,7 @@ function Hero() {
           <motion.div className="buttons" variants={textVariants}>
             <motion.button onClick={() => {
               window.open(
-                "https://drive.google.com/file/d/1OzbKc1g9VaIAoDrUAMH7KTzrI9O-OXRk/view?usp=drivesdk"
+                "https://drive.google.com/file/d/1TwmszY-N-yAA1IIFoerIIGmz6DEjd0l0/view?usp=drivesdk"
               );
             }}>Download Resume</motion.button>
           </motion.div>
